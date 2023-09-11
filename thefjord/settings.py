@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['thefjord-b1491443270e.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['thefjord-b1491443270e.herokuapp.com', '8000-cathalsween-thefjordres-yo7gissar01.ws-eu104.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -45,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'bookings',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
