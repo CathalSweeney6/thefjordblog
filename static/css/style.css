@@ -2,22 +2,47 @@ body {
     background-color: #F9FAFC;
 }
 
+
 .brand {
     font-size: 1.4rem;
     font-weight: 700;
     color: gray;
 }
 
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: darkgray;
+}
+
+.tagline {
+    color: white;
+}
+
 .blue-n{
     font-family: 'Press Start 2P', cursive;
-    color: navy;
+    color: #91b6c6;
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 .thin {
     font-weight: 400;
-    color: gray
+    color:  #58908f;
+}
+
+.bg-image {
+    height: 700px;
+    width: fit-content;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 0 100px 100px #58908f;
 }
 
 .light-bg {
@@ -29,7 +54,7 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #36454f;
 }
 
 .card {
