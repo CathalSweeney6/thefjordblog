@@ -54,7 +54,7 @@ body {
 }
 
 .main-bg {
-    background-color: #36454f;
+    background-color: darkgray;
 }
 
 .card {
@@ -157,7 +157,7 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: darkred;
     border: none;
     background: transparent;
 }
