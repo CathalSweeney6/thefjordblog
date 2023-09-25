@@ -4,10 +4,10 @@
 <html class="h-100">
 
 <head>
-    <title> Nerd News Network </title>
+    <title> The Fjord </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/baron-neue" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Raleway:wght@600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -27,9 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light dark-bg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"> <span class="blue-n">N<span><span class="thin">erd <span class="blue-n">N<span
-                class="thin">ews </span></span><span class="blue-n">N<span></span><span
-                        class="thin">etwork</span></span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"> <span class="icon">THE FJORD </span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,7 +52,7 @@
 
                 </ul>
                 <span class="tagline">
-                   News for Nerds, by Nerds!
+                   The Nordic Nerd Blog!
                 </span>
             </div>
         </div>
@@ -62,7 +60,7 @@
     <div class="container">
         <div class="row">
             <div class="bg-image">
-            <img src="../static/images/wizard.jpeg" alt="wizard">
+            <img src="../static/images/main_img.jpeg" alt="main_img">
             </div>
             <div class="col-md-8 offset-md-2">
                 {% for message in messages %}
