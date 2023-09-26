@@ -45,7 +45,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #36454f;
 }
 
 .main-bg {
@@ -66,7 +66,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: navy;
+    background-color: #508da9;
 }
 
 .author {
@@ -85,7 +85,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #36454f;
     color: white;
     position: relative;
 }
@@ -102,7 +102,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #36454f;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -116,7 +116,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #508da9;
 }
 
 .post-title {
@@ -130,18 +130,18 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #508da9;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #508da9;
 }
 
 .link {
-    color: #23BBBB;
+    color: #508da9;
     text-decoration: none;
 }
 
@@ -152,14 +152,14 @@ body {
 }
 
 .btn-like {
-    color: darkred;
+    color: navy;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #508da9;
     background: transparent;
     border: none;
 }

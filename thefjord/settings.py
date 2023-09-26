@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['thefjord-b1491443270e.herokuapp.com', '8000-cathalsween-thefjordres-yo7gissar01.ws-eu104.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['thefjord-b1491443270e.herokuapp.com', '8000-cathalsween-thefjordres-yo7gissar01.ws-eu105.gitpod.io', 'localhost']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
