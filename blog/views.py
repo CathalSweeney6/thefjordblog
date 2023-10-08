@@ -76,3 +76,14 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+def search(request):
+    if request.method == "POST":
+        searched = request.POST['searched']
+        post_list = Post.objects.filter(content__contains=searched)
+
+        return render(request, 'search.html',
+                      {'searched': searched, ' post_list':  post_list})
+    else:
+        return render(request, 'search.html', {})
