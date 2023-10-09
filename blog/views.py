@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from django.db.models import Q
 
 
 class PostList(generic.ListView):
@@ -81,9 +82,11 @@ class PostLike(View):
 def search(request):
     if request.method == "POST":
         searched = request.POST['searched']
-        post_list = Post.objects.filter(content__contains=searched)
+
+        query = Q(content__icontains=searched) | Q(title__icontains=searched)
+        post_list = Post.objects.filter(query)
 
         return render(request, 'search.html',
-                      {'searched': searched, ' post_list':  post_list})
+                      {'searched': searched, 'post_list':  post_list})
     else:
         return render(request, 'search.html', {})
