@@ -7,4 +7,5 @@ urlpatterns = [
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path('search', views.search, name='search'),
     path('contact.html', views.contact, name="contact"),
+    path('success.html', views.success, name="success"),
 ]

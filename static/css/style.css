@@ -9,6 +9,11 @@ body {
     color: gray;
 }
 
+.row {
+
+    --bs-gutter-x: 0rem;
+}
+
 .navbar-light .navbar-nav .nav-link.active {
     color: white;
 }

@@ -4,7 +4,9 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from django.db.models import Q
-from django.core.mail import send_mail
+from django.core.mail import send_mail, BadHeaderError
+from django.shortcuts import render, redirect
+
 
 class PostList(generic.ListView):
     model = Post
@@ -110,3 +112,14 @@ def contact(request):
 
     else:
         return render(request, 'contact.html', {})
+
+
+def success(request):
+    if request.method == "POST":
+        # success = request.POST['success']
+        print("if block")
+        return render(request, 'success.html')
+
+    else:
+        print("else block")
+        return render(request, 'success.html', {})

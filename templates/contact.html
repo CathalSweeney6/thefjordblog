@@ -3,7 +3,7 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Contaxt Us" %}
+{% block head_title %}{% trans "Contat Us" %}
 {% endblock %}
 
 {% block content %}
@@ -11,10 +11,11 @@
 <div class="container">
 
   </div>
+  
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      {% csrf_token %}
-      <form class="login" method="POST" action="https://formdump.codeinstitute.net/">
+      <form class="login" method="POST" action="{% url 'success' %}">
+        {% csrf_token %}
         <h3>Contact Us</h3>
         <br>
         <p><label for="id_login">Your Name:</label> <input type="text" name="Name:" placeholder="Name" autocomplete="username" maxlength="150" required id="id_login"></p>
@@ -25,6 +26,7 @@
     <br>
         <button class="btn btn-signup right" type="submit">Submit</button>
       </form>
+      
     </div>
   </div>
   <br>
