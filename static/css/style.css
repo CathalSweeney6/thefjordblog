@@ -31,6 +31,7 @@ body {
     color: whitesmoke;
     font-size: 2.4rem;
     font-weight: 700;
+    font-display: swap;
 }
 
 
@@ -60,6 +61,11 @@ body {
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
 
 .image-container {

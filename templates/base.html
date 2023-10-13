@@ -1,11 +1,11 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html class="h-100">
+<html lang="en" class="h-100">
 
 <head>
     <title> The Fjord </title>
-
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.cdnfonts.com/css/baron-neue" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -93,10 +93,10 @@
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Follow our Socials:</p>
         <p class="m-0 text-center text-white">
-            <a href="https://www.facebook.com/" class="text-white" target="_blank"><i class="fab fa-facebook-square ms-3"></i></a>
-            <a href="https://twitter.com/?lang=en" class="text-white" target="_blank"><i class="fab fa-twitter-square ms-3"></i></a>
-            <a href="https://www.instagram.com/" class="text-white" target="_blank"><i class="fab fa-instagram-square ms-3"></i></a>
-            <a href="https://www.youtube.com/premium" class="text-white" target="_blank"><i class="fab fa-youtube-square ms-3"></i></a></p>
+            <a aria-label="facebook" href="https://www.facebook.com/" class="text-white facebook", id="facebook" target="_blank"><i class="fab fa-facebook-square ms-3"></i></a>
+            <a aria-label="twitter" href="https://twitter.com/?lang=en" class="text-white twitter" id="twitter" target="_blank"><i class="fab fa-twitter-square ms-3"></i></a>
+            <a aria-label="instagram" href="https://www.instagram.com/" class="text-white instagram" id="instagram" target="_blank"><i class="fab fa-instagram-square ms-3"></i></a>
+            <a aria-label="youtube" href="https://www.youtube.com/premium" class="text-white youtube" id="youtube" target="_blank"><i class="fab fa-youtube-square ms-3"></i></a></p>
     </footer>
     <script>
         setTimeout(function () {
