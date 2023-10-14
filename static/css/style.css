@@ -2,7 +2,6 @@ body {
     background-color: #F9FAFC;
 }
 
-
 .brand {
     font-size: 1.4rem;
     font-weight: 700;
@@ -174,6 +173,8 @@ body {
     background: transparent;
     border: none;
 }
+
+/* Removes the background image from smaller device */
 
 @media screen and (max-width: 767px) {
 

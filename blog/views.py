@@ -7,12 +7,16 @@ from django.db.models import Q
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, redirect
 
+# View for list of posts on home page
+
 
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
+
+# View for full post in detail
 
 
 class PostDetail(View):
@@ -69,6 +73,9 @@ class PostDetail(View):
         )
 
 
+# View for liking a post
+
+
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -79,6 +86,9 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+# View for searching for a post
 
 
 def search(request):
@@ -92,6 +102,9 @@ def search(request):
                       {'searched': searched, 'post_list':  post_list})
     else:
         return render(request, 'search.html', {})
+
+
+# View for the contact form
 
 
 def contact(request):
@@ -112,6 +125,8 @@ def contact(request):
 
     else:
         return render(request, 'contact.html', {})
+
+# View for the success message page
 
 
 def success(request):
