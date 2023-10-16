@@ -2,7 +2,7 @@
 
 'The Fjord,' is my Project 4 submission, under the 'Project Idea 0' choice of build and design. The site is a blogsite that focuses on all things Nordic! The site features interesting and quirky facts about the Nordic countries. Users have the ability to create profiles on the site, login, like posts, and leave comments. Those with or without a site profile, can search the site for posts using the searchbar on the navbar. They can also fill out a contact form, which displays a success message, when their message is sent. 
 
-<img src="./static/Screenshots/amiresposnive.png" width="50%" height="50%">
+<img src="./static/Screenshots/amiresposnive.png" width="80%" height="80%">
 
 ## Table of Contents
 
@@ -76,7 +76,7 @@
 
 Alongside the logging of my User Stories, I ran manual tests for each of them, and logged the results on a Microsoft Excel file. Here are my results:
 
-<img src="./static/Screenshots/manualtests.png" width="60%" height="60%">
+<img src="./static/Screenshots/manualtests.png" width="80%" height="80%">
 
 ### Agile Methodology
 
@@ -99,7 +99,7 @@ I originally planned on creating a Django site for a restaurant that served Nord
 
 Prior to writing any code, I designed the wireframe for my site using Balsamiq. The wireframe differred slightly from the finished project, though the basic mainframe idea was there. 
 
-<img src="./static/Screenshots/balsamiq.png" width="50%" height="50%">
+<img src="./static/Screenshots/balsamiq.png" width="60%" height="60%">
 
 ### Site Design and Layout
 
@@ -108,21 +108,21 @@ Prior to writing any code, I designed the wireframe for my site using Balsamiq. 
 I reasearched other sites that focused on Nordic aspects. I found that these sites shared a common feature of a muted colour scheme. I took this inspiration on board and began to design my site. 
 I chose a muted charcoal tone for the navbar and blog tagline text.
 
-<img src="./static/Screenshots/colour_navbar.png" width="50%" height="50%">
+<img src="./static/Screenshots/colour_navbar.png" width="80%" height="80%">
 
 I chose a muted green colour for the main site background colour. I found this shade of green reflected the natural aspect of the Nordic landscape. 
 
-<img src="./static/Screenshots/colour_site_bg.png" width="50%" height="50%">
+<img src="./static/Screenshots/colour_site_bg.png" width="80%" height="80%">
 
 I chose a muted blue for the author tags and buttons, as I believe it contrasts well against the muted green background and charcoal elements. 
 
-<img src="./static/Screenshots/colour_tags_buttons.png" width="50%" height="50%">
+<img src="./static/Screenshots/colour_tags_buttons.png" width="80%" height="80%">
 
 #### Site Logo and Typography
 
 I wanted the site's logo to be font-based, and I wanted the selected font to be reflective of the site's focus on Nordic culture. I chose 'Baron Neue,' as I thought the font's modernity, along with its rugged, angular style, reflected this the most. 
 
-<img src="./static/Screenshots/logo.png" width="20%" height="20%">
+<img src="./static/Screenshots/logo.png" width="50%" height="50%">
 
 I also chose to include the 'Roboto' and 'Raleway' fonts as fonts for the sites text, as they are clear and have been reliable on previous projects. 
 
@@ -130,15 +130,15 @@ I also chose to include the 'Roboto' and 'Raleway' fonts as fonts for the sites 
 
 The site features a Hero Image of Norway's Lofoten Islands. This image is surrounded by a box-shadow, that blends the image into the background more. I chose this image as it features idyllic imagery of coastal cottages and fjords. The image is media-queried out of display on smaller devices, to make navigating the site, and reading blogposts, easier for users. 
 
-<img src="./static/images/main_img.jpeg" width="50%" height="50%">   
+<img src="./static/images/main_img.jpeg" width="80%" height="80%">   
 
-<img src="./static/Screenshots/media_query_no_img.png" width="20%" height="20%">
+<img src="./static/Screenshots/media_query_no_img.png" width="50%" height="50%">
 
 #### Favicon Image
 
 I added a favicon file to my project, that loads up alongside the site's name in the browser tab.
 
-<img src="./static/images/favicon.png" width="20%" height="20%">   
+<img src="./static/images/favicon.png" width="50%" height="50%">   
 
 ### Features 
 
@@ -146,47 +146,47 @@ I added a favicon file to my project, that loads up alongside the site's name in
 
 The navbar features The site's logo, which also acts as a link to the home page, along with links to the home page, the login/logout page, the register page, the contact form page, and the searchbar, where users can search for posts. The navbar also includes the site's tagline, 'The Nordic Nerd Blog!'
 
-<img src="./static/Screenshots/navbar_menu.png" width="20%" height="20%">
+<img src="./static/Screenshots/navbar_menu.png" width="50%" height="50%">
 
 #### Collection of Blogposts
 
 The home page shows all of the submitted blogpost links in order of publication. The blogpost links feauture the post's featured image, along with a tagline and a snipped of the post. Users can click on each post and read the post on the specific post detail page, once loaded. 
 
-<img src="./static/Screenshots/collection_posts.png" width="50%" height="50%">
+<img src="./static/Screenshots/collection_posts.png" width="80%" height="80%">
 
 #### Post Detail Page
 
 The post detail page features the post in-full, along with its specific featured image. Underneath each post, users are promted to either sign in, or sign up for an account, should they wish to like the post, or leave a comment for submission. This promt includes links to the 'Login' and 'Register' pages. 
 
-<img src="./static/Screenshots/post_detail.png" width="50%" height="50%">
+<img src="./static/Screenshots/post_detail.png" width="80%" height="80%">
 
 #### The Next Button
 
 The home screen paginates blogposts with a post cut-off of 6, per page. Users can click the 'Next' button, above the site's footer, to load more blogposts. 
 
 
-<img src="./static/Screenshots/next.png" width="20%" height="20%">
+<img src="./static/Screenshots/next.png" width="50%" height="50%">
 
 #### Like Button and Comments Section
 
 Once the user is logged in, the sign in/sign up prompt isn't displayed. They can now like and unlike the post and submit comments, to be approved by the site admin.
 
 
-<img src="./static/Screenshots/like_comment.png" width="50%" height="50%">
+<img src="./static/Screenshots/like_comment.png" width="80%" height="80%">
 
 #### Edit Comments Page 
 
 Logged in Users have the ability to add, edit or delete their own comments. The Superuser/Admin can also complete this action.
 
 
-<img src="./static/Screenshots/edit_comment.png" width="50%" height="50%">
+<img src="./static/Screenshots/edit_comment.png" width="80%" height="80%">
 
 #### Search Results Page 
 
 All users can use the searchbar on the navbar to search for posts, by word. If the search contains no characters, they will be prompted to enter their query into the searchbar. 
 
 
-<img src="./static/Screenshots/search.png" width="50%" height="50%">
+<img src="./static/Screenshots/search.png" width="80%" height="80%">
 
 
 #### Account Register Page 
@@ -194,7 +194,7 @@ All users can use the searchbar on the navbar to search for posts, by word. If t
 Users wishing to create an account on the website, can do so by registering for an account on the 'Register' page. The user must create a username and secure password, and will be warned if the latter isn't so. They can also add an optional email address to their account, upon registering. 
 
 
-<img src="./static/Screenshots/register.png" width="50%" height="50%">
+<img src="./static/Screenshots/register.png" width="80%" height="80%">
 
 
 #### Login Page
@@ -202,7 +202,7 @@ Users wishing to create an account on the website, can do so by registering for 
 Users enter their username and password into this page and can successfully login. When logged in, the user us redirected to the home page and will be greeted with a 'Successfully logged in as "..."' message. 
 
 
-<img src="./static/Screenshots/login.png" width="50%" height="50%">
+<img src="./static/Screenshots/login.png" width="80%" height="80%">
 
 
 #### Logout Page
@@ -210,42 +210,42 @@ Users enter their username and password into this page and can successfully logi
 When logged in, the 'Logout' link sits in the place of the 'Login' link, on the navbar. Users click the link, and are asked if they want to sign out. Upon signing out, they are redirected to the home page and a message informs them that they have successfully signed out. 
 
 
-<img src="./static/Screenshots/logout.png" width="50%" height="50%">
+<img src="./static/Screenshots/logout.png" width="80%" height="80%">
 
 #### Contact Form
 
 Users can contact the site by clicking the 'Contact Us' link on the navbar. Users can then enter their name, email and message into a contact form. When the user clicks the 'Submit' button on the contact form, they are directed to the 'Success' page. 
 
 
-<img src="./static/Screenshots/contact.png" width="50%" height="50%">
+<img src="./static/Screenshots/contact.png" width="80%" height="80%">
 
 #### Success Page
 
 The success page displays a message, that informs the user that their message was sent successfully. Here, they can easily return to the home page, by simply clicking on the site's logo or 'Home' link, on the navbar. 
 
 
-<img src="./static/Screenshots/success.png" width="50%" height="50%">
+<img src="./static/Screenshots/success.png" width="80%" height="80%">
 
 #### Footer
 
 The site's footer is similar in style to the navbar, and features icons as links to Facebook, Twitter, Instagram and YouTube. 
 
 
-<img src="./static/Screenshots/footer.png" width="20%" height="20%">
+<img src="./static/Screenshots/footer.png" width="50%" height="50%">
 
 ### Superuser / Admin Site 
 
 As a site Admin, I could create, edit and delete posts on the site, as well as approve user comments, and monitor and delete user profiles and email addresses, by using the built in Django administration site, for my project. 
 
 
-<img src="./static/Screenshots/admin.png" width="50%" height="50%">
+<img src="./static/Screenshots/admin.png" width="80%" height="80%">
 
 ### Database Diagram
 
 I used LucidChart to create a Database Diagram for my project.
 
 
-<img src="./static/Screenshots/chart.png" width="50%" height="50%">
+<img src="./static/Screenshots/chart.png" width="80%" height="80%">
 
 ## Technologies Used 
 
@@ -283,42 +283,42 @@ I used LucidChart to create a Database Diagram for my project.
 
 Testing was carried out extensively, whilst creating and publishing my site. As my project featured various different elements interacting with one another, I wanted to insure that everything ran correctly. I checked my site's console, and had zero issues. 
 
-<img src="./static/Screenshots/devcon.png" width="20%" height="20%">
+<img src="./static/Screenshots/devcon.png" width="50%" height="50%">
 
 #### Lighthouse 
 
 I tested my site on Google's 'Lighthouse' feature, which pointed out ways in which I could improve the website for a smoother load-time and better user experience on desktop, tablet and mobile. I took Lighthouse's advice on board and was delighted with my results. 
 
 
-<img src="./static/Screenshots/lighthouse.png" width="50%" height="50%">
+<img src="./static/Screenshots/lighthouse.png" width="80%" height="80%">
 
 #### W3 HTML Validation 
 
 I ran my html through W3's html validation site, and received no errors. 
 
 
-<img src="./static/Screenshots/html.png" width="50%" height="50%">
+<img src="./static/Screenshots/html.png" width="80%" height="80%">
 
 #### W3 CSS Validation 
 
 I also ran my CSS through W3's CSS validation site, and received no errors. 
 
 
-<img src="./static/Screenshots/css.png" width="50%" height="50%">
+<img src="./static/Screenshots/css.png" width="80%" height="80%">
 
 #### Python Validation 
 
 I validated the Pyhon files of my project using Code Institute's Python Linter. My code was found to have no errors on each file. 
 
 
-<img src="./static/Screenshots/python.png" width="50%" height="50%">
+<img src="./static/Screenshots/python.png" width="80%" height="80%">
 
 #### JavaScript Validation 
 
 My site includes one block of JavaScript, that times out pop-up messages, such as the  'Successfully logged in as "...",' and 'Your comment is awaiting approval' messages. I ran my JavaScript through ExtendsClass' JavaScript validator. My JavaScript code was found to be free of errors and was syntactically valid. 
 
 
-<img src="./static/Screenshots/javascript.png" width="50%" height="50%">
+<img src="./static/Screenshots/javascript.png" width="80%" height="80%">
 
 #### Frontend
 
