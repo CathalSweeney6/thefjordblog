@@ -173,7 +173,7 @@ I used LucidChart to create a Database Diagram for my project.
 
 Testing was carried out eztensivley whilst creating and publishing my site. As my project featured various different elements interacting with one another, I wanted to insure that everything ran correctly. I checked my site's console and had zero issues. 
 
-#### lighthouse 
+#### Lighthouse 
 
 I tested my site on Google's 'Lighhouse' feature, which pointed out ways in which I could improve the website for a smoother load-time and better user experience on desktop, tablet and mobile. I took Lighthouse's advice onboard and was delighted with my results. 
 
@@ -187,10 +187,87 @@ I also ran my CSS through W3's CSS validation site and received no errors.
 
 #### Python Validation 
 
-I validated the Pyhon files of my project using Code Institute's  Python Linter. My code was found to have no errors on each file. 
+I validated the Pyhon files of my project using Code Institute's Python Linter. My code was found to have no errors on each file. 
 
 #### JavaScript Validation 
 
 My site includes one block of JavaScript, that times out pop-up messages, such as the  'Successfully logged in as "...",' and 'Your comment is awaiting approval' messages. I ran my JavaScript through ExtendsClass' JavaScript validator. My JavaScript code was found to be free of errors and was syntactically valid. 
 
 
+#### Frontend
+
+* Users can successfully register, login and logout of their accounts on the site, as well as like posts, leave comments and fill out a contact form.  Messages appear on the screen when Users complete these actions. 
+* When a User wishes a create an account, or log in, they are promted to fill in the required fields, in order to do so. 
+* All links in the site work, allowing the user to access all of the posts, and navbar sections, as well as the external social media icon links in the site's footer.
+* The site is successfully paginated, with the number of posts, per-page, cutting off at six. Users can acccess the remainder of the posts by clicking the 'Next' button that sits above the footer section. 
+* CRUD functionality is established for Users, as they have the ability to like/unlike posts, as well as the ability to submit, post, edit and delete comments. 
+
+#### Backend 
+
+* The Superuser/Admin can monitor, edit and delete saved email addresses, and submitted comments, if they wish, from the Django Admin site. 
+* When creating a post, the Superuser/Admin is promted to fill in the required fields, in order to do so. 
+
+### Bugs
+
+I luckily only had a couple of bugs to deal with during the creation of this project. These were instantly spotted and fixed, through being notified of them in the 'Problems' tab on my Gitpod panel, and through Django Error messges that appeared when editing and previewing my site on Gitpod. 
+
+## Setting Up a Django App
+
+1. Firstly, open the [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template). 
+2. Use this template to create a new Github repository.  
+3. Once the reposotory is set up, use the github terminal to instnstall Django and gunicorn to you workspace, by entering in: `pip3 install 'django<4' gunicorn`.
+4. Next install the database libraries dj_database_url and psycopg2, by entering in: `pip3 install dj_database_url==0.5.0 psycopg2`.
+5. Create a requirements file by enteringn: `pip freeze --local > requirements.txt`.
+6. Create your project, by entering in: `django-admin startproject desired_projcect_name_goes_here`.
+7. Create your Django app, by entering in: `python3 manage.py startapp desired_app_name_goes_here`.
+8. Enter your apps's name into the list of installed apps in your settings.py file.
+9. Migrate changes to your project by entering in: `python3 manage.py migrate`.
+10. Check to see if your Django app is successfully set up, by running the server, by entering in: `python3 manage.py runserver`.
+11. By following these instructions, the app should be successfully set up. The server will show a 'succesfully installed' message from Django. 
+
+## Deployment to Heroku
+
+1. Log in to your [Heroku](https://id.heroku.com) account, and select Create New App from the menu. 
+2. Enter your desired app name, then select your region, in order to create the app. 
+3. Use ElephantSQL to create a database. Log in, create a new instance, and name your plan through their Tiny Turtle Free Plan. Select your region and datacentre, and review your instance before creating. 
+4. Copy your database URL from your ElephantSQL dashboard. 
+5. Return to your gitpod workspace, create a new file called env.py and ensure that this file is included in your gitignore file list.
+6. Next, add the env.py file to your settings.py file. Swap the insecure key in your settings.py file with the new `SECRET_KEY = os.environ.get('SECRET_KEY')`. Then, replace the database in settings.py with `DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}`. Enter your secret key, along with your database information to the env.py file and migrate all changes. 
+7. Create a Cloudinary account. Once created, copy your API authentication information from your profile.  Add this information to your env.py file, under `CLOUDINARY_URL`. Add cloudinary_libraries to the list of installed apps in your settings.py file, `STATICFILES_STORAGE`, `Cloudinary_storage.storage.StaticHashedCloudinaryStorage`, and connect your base directory to static, by using `os.path.join`, and create a static route.  to connect our base directory to static and set up static route. Follow these steps to establish a  media URL,  `Cloudinary_storage.storage.MediaCloudinaryStorage`.
+8. Add `TEMPLATES_DIR =  os.path.join(BASE_DIR, 'templates')` under your base direcory in your settings.py file. Change the D-I-R-S key to align towards the new templates directory variable. 
+9. In your settings.py file, add your Heroku host name into the list of allowed hosts, whilst additionally adding 'localhost'. 
+10. Create a new Procfile: `web: gunicorn your_project_name.wsgi`.
+11. In Heroku, reveal your Config Vars and add a SECRET_KEY, the `CLOUDINARY_URL`, `DISABLE_COLLECTSTATIC =, the DATABASE_URL, and set your PORT to 8000.
+12. Select Github as the deployment method connect to your GitHub repository.
+13. Configure your desired deployment setting in the Deploy tab. 
+15. Choose whether to 'Enable Automatic Deploys,' for automatic deployment when you push updates to Github, or not.
+
+## Final Deployment to Heroku 
+
+1. Create a runtime.txt: `python-3.8.13`. 
+2. Ensure that  `DEBUG = False` in settings.py before any deployment. 
+3. Add: `X_FRAME_OPTIONS = SAMEORIGIN` to settings.py.
+4. In Heroku settings, delete the config vars entry: `DISABLE_COLLECTSTATIC = 1`. 
+5. You can now deploy your app to Heroku!
+
+### Credits 
+
+* This project was inspired by the Code Institute 'I Think, Therefore I Blog' walkthrough project. 
+* The site's logo font was taken from [cdnfonts.com](https://www.cdnfonts.com/baron-neue.font). 
+* The Site's icons were taken from [fontawesome.com](https://fontawesome.com). 
+* The site's hero image was taken from [Pixabay.com](https://pixabay.com/) and uploaded using Cloudinary. 
+* Some of the Blogpost's featured images were taken from [Pexels.com](https://pexels.com/).
+* The 'Nordic Shows' Blogpost featured image was taken from [BBC.com](https://www.bbc.co.uk/programmes/m0002qyz). 
+* The 'Lego' Blogpost featured image was taken from [ideabrickworks.com](https://ideabrickworks.com/the-art-and-fun-of-the-mosaic/). 
+* The 'Thor' Blogpost featured image was taken from [CBR.com](https://www.cbr.com/marvel-thor-norse-mythology-same-different/). 
+* The 'Finland' Blogpost featured image was taken from [Heavymetalknitting.com](https://heavymetalknitting.com/). 
+* The 'Iceland' Blogpost featured image was taken from [Whatson.is](https://www.whatson.is/five-really-very-strong-icelanders-mens-edition/). 
+* The Swedish Meatball recipe was taken from [Sweden.se](https://sweden.se/culture/food/swedish-meatballs). 
+* The Hjertevafler recipe was taken from [Norway With Pål](https://www.youtube.com/watch?v=I0jF8iE5BYQ&embeds_referring_euri=https%3A%2F%2Fnorwaywithpal.com%2F&embeds_referring_origin=https%3A%2F%2Fnorwaywithpal.com&source_ve_path=MjM4NTE&feature=emb_title). 
+
+### Resources Used
+
+* Stack Overflow 
+* W3Schools
+* The searchbar and contact form were created by following turorials by [Codemy.com](https://www.youtube.com/watch?v=AGtae4L5BbI).
+* The edit/delete User comment feature was created by follwoig a tutorial by [Medium.com](https://legionscript.medium.com/building-a-social-media-site-with-python-and-django-part-4-edit-delete-posts-add-comments-8e6ca1ef0441). 
