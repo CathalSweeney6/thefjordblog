@@ -80,7 +80,7 @@ Alongside the logging of my User Stories, I ran manual tests for each of them, a
 
 ### Agile Methodology
 
-I completed my tasks by using the Agile methodod of task management. I found this method very helpful and rewarding to my work. I added User Story issues to my Github Projects tab on the site's repository page, which can be viewed [here](https://github.com/users/CathalSweeney6/projects/5/views/1).
+I completed my tasks by using the Agile method of task management. I found this method very helpful and rewarding to my work. I added User Story issues to my Github Projects tab on the site's repository page, which can be viewed [here](https://github.com/users/CathalSweeney6/projects/5/views/1).
 
 ### Planning Out My Project
 
@@ -90,7 +90,7 @@ I originally planned on creating a Django site for a restaurant that served Nord
 
 * To provide site users with an intriguing, easily accessable, and well formatted site, with neat, clear and muted design choices. 
 * To appeal to all users and, not just a niche selection. 
-* To provide registered site users with the ability to interact with the site, throgh likes and comments. 
+* To provide registered site users with the ability to interact with the site, through likes and comments. 
 * To make sure that all blogpost taglines and images are to the point, and appealing to site users. 
 * To make sure that posts can be easily found by use of the searchbar. 
 * To make sure that the site runs smoothly on all screen sizes and devices. 
@@ -105,7 +105,7 @@ Prior to writing any code, I designed the wireframe for my site using Balsamiq. 
 
 #### Colour Scheme 
 
-I reasearched other sites that focused on Nordic aspects. I found that these sites shared a common feature of a muted colour scheme. I took this inspiration on board and began to design my site. 
+I researched other sites that focused on Nordic aspects. I found that these sites shared a common feature of a muted colour scheme. I took this inspiration on board and began to design my site. 
 I chose a muted charcoal tone for the navbar and blog tagline text.
 
 <img src="./static/Screenshots/colour_navbar.png" width="80%" height="80%">
@@ -144,19 +144,19 @@ I added a favicon file to my project, that loads up alongside the site's name in
 
 #### Navbar
 
-The navbar features The site's logo, which also acts as a link to the home page, along with links to the home page, the login/logout page, the register page, the contact form page, and the searchbar, where users can search for posts. The navbar also includes the site's tagline, 'The Nordic Nerd Blog!'
+The navbar features the site's logo, which also acts as a link to the home page, along with links to the home page, the login/logout page, the register page, the contact form page, and the searchbar, where users can search for posts. The navbar also includes the site's tagline, 'The Nordic Nerd Blog!'
 
 <img src="./static/Screenshots/navbar_menu.png" width="50%" height="50%">
 
 #### Collection of Blogposts
 
-The home page shows all of the submitted blogpost links in order of publication. The blogpost links feauture the post's featured image, along with a tagline and a snipped of the post. Users can click on each post and read the post on the specific post detail page, once loaded. 
+The home page shows all of the submitted blogpost links in order of publication. The blogpost links feature the post's featured image, along with a tagline and a snippet of the post. Users can click on each post and read the post on the specific post detail page, once loaded. 
 
 <img src="./static/Screenshots/collection_posts.png" width="80%" height="80%">
 
 #### Post Detail Page
 
-The post detail page features the post in-full, along with its specific featured image. Underneath each post, users are promted to either sign in, or sign up for an account, should they wish to like the post, or leave a comment for submission. This promt includes links to the 'Login' and 'Register' pages. 
+The post detail page features the post in-full, along with its specific featured image. Underneath each post, users are prompted to either sign in, or sign up for an account, should they wish to like the post, or leave a comment for submission. This prompt includes links to the 'Login' and 'Register' pages. 
 
 <img src="./static/Screenshots/post_detail.png" width="80%" height="80%">
 
@@ -199,7 +199,7 @@ Users wishing to create an account on the website, can do so by registering for 
 
 #### Login Page
 
-Users enter their username and password into this page and can successfully login. When logged in, the user us redirected to the home page and will be greeted with a 'Successfully logged in as "..."' message. 
+Users enter their username and password into this page and can successfully login. When logged in, the user is redirected to the home page and will be greeted with a 'Successfully logged in as "..."' message. 
 
 
 <img src="./static/Screenshots/login.png" width="80%" height="80%">
@@ -322,34 +322,34 @@ My site includes one block of JavaScript, that times out pop-up messages, such a
 
 #### Frontend
 
-* Users can successfully register, login and logout of their accounts on the site, as well as search for posts, like posts, leave comments and fill out a contact form.  Messages appear on the screen when Users complete these actions. 
-* When a User wishes a create an account, or log in, they are promted to fill in the required fields, in order to do so. 
+* Users can successfully register, login and logout of their accounts on the site, as well as search for posts, like posts, leave comments and fill out a contact form.  Messages appear on the screen when users complete these actions. 
+* When a user wishes to create an account, or log in, they are prompted to fill in the required fields, in order to do so. 
 * All links in the site work, allowing the user to access all of the posts, and navbar sections, as well as the external social media icon links in the site's footer.
-* The site is successfully paginated, with the number of posts, per-page, cutting off at six. Users can acccess the remainder of the posts by clicking the 'Next' button that sits above the footer section. 
+* The site is successfully paginated, with the number of posts, per-page, cutting off at six. Users can access the remainder of the posts by clicking the 'Next' button that sits above the footer section. 
 * CRUD functionality is established for users, as they have the ability to like/unlike posts, as well as the ability to submit, post, edit and delete comments. 
 
 #### Backend 
 
 * The Superuser/Admin can monitor, edit and delete saved email addresses, and submitted comments, if they wish, from the Django Admin site. 
-* When creating a post, the Superuser/Admin is promted to fill in the required fields, in order to do so. 
+* When creating a post, the Superuser/Admin is prompted to fill in the required fields, in order to do so. 
 
 ### Bugs
 
-I luckily only had a couple of bugs to deal with, during the creation of this project. These were instantly spotted and fixed, through being notified of them in the 'Problems' tab on my Gitpod panel, and through Django Error messges that appeared when editing and previewing my site on Gitpod. 
+I luckily only had a couple of bugs to deal with, during the creation of this project. These were instantly spotted and fixed, through being notified of them in the 'Problems' tab on my Gitpod panel, and through Django error messages that appeared when editing and previewing my site on Gitpod. 
 
 ## Setting Up a Django App
 
 1. Firstly, open the [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template). 
 2. Use this template to create a new Github repository.  
-3. Once the reposotory is set up, use the Github terminal to instnstall Django and Gunicorn to you workspace, by entering in: `pip3 install 'django<4' gunicorn`.
+3. Once the repository is set up, use the Github terminal to install Django and Gunicorn to your workspace, by entering in: `pip3 install 'django<4' gunicorn`.
 4. Next install the database libraries, dj_database_url and psycopg2, by entering in: `pip3 install dj_database_url==0.5.0 psycopg2`.
-5. Create a requirements file by entering: `pip freeze --local > requirements.txt`.
+5. Create a requirements file by entering in: `pip freeze --local > requirements.txt`.
 6. Create your project, by entering in: `django-admin startproject desired_project_name_goes_here`.
 7. Create your Django app, by entering in: `python3 manage.py startapp desired_app_name_goes_here`.
 8. Enter your app's name into the list of installed apps, in your settings.py file.
 9. Migrate changes to your project by entering in: `python3 manage.py migrate`.
 10. Check to see if your Django app is successfully set up, by running the server, by entering in: `python3 manage.py runserver`.
-11. By following these instructions, the app should be successfully set up. The server will show a 'succesfully installed' message from Django. 
+11. By following these instructions, the app should be successfully set up. The server will show a 'successfully installed' message from Django. 
 
 ## Deployment to Heroku
 
@@ -359,18 +359,18 @@ I luckily only had a couple of bugs to deal with, during the creation of this pr
 4. Copy your database URL from your ElephantSQL dashboard. 
 5. Return to your Gitpod workspace, create a new file called env.py and ensure that this file is included in your gitignore file list.
 6. Next, add the env.py file to your settings.py file. Swap the insecure key in your settings.py file, with the new `SECRET_KEY = os.environ.get('SECRET_KEY')`. Then, replace the database in settings.py with `DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}`. Enter your secret key, along with your database information to the env.py file, and migrate all changes. 
-7. Create a Cloudinary account. Once created, copy your API authentication information from your profile.  Add this information to your env.py file, under `CLOUDINARY_URL`. Add cloudinary_libraries to the list of installed apps in your settings.py file, `STATICFILES_STORAGE`, `Cloudinary_storage.storage.StaticHashedCloudinaryStorage`, and connect your base directory to static, by using `os.path.join`, and create a static route.  To connect our base directory to static and set up static route, Follow these steps to establish a media URL,  `Cloudinary_storage.storage.MediaCloudinaryStorage`.
-8. Add `TEMPLATES_DIR =  os.path.join(BASE_DIR, 'templates')` under your base direcory in your settings.py file. Change the D-I-R-S key to align towards the new templates directory variable. 
+7. Create a Cloudinary account. Once created, copy your API authentication information from your profile.  Add this information to your env.py file, under `CLOUDINARY_URL`. Add cloudinary_libraries to the list of installed apps in your settings.py file, `STATICFILES_STORAGE`, `Cloudinary_storage.storage.StaticHashedCloudinaryStorage`, and connect your base directory to static, by using `os.path.join`, and create a static route.  To connect your base directory to static and set up static route, Follow these steps to establish a media URL,  `Cloudinary_storage.storage.MediaCloudinaryStorage`.
+8. Add `TEMPLATES_DIR =  os.path.join(BASE_DIR, 'templates')` under your base directory in your settings.py file. Change the D-I-R-S key to align towards the new templates directory variable. 
 9. In your settings.py file, add your Heroku host name into the list of allowed hosts, whilst additionally adding 'localhost'. 
 10. Create a new Procfile: `web: gunicorn your_project_name.wsgi`.
 11. In Heroku, reveal your Config Vars and add a SECRET_KEY, the `CLOUDINARY_URL`, `DISABLE_COLLECTSTATIC =1`, the DATABASE_URL, and set your PORT to 8000.
-12. Select Github as the deployment method connect to your Github repository.
+12. Select Github as the deployment method to connect to your Github repository.
 13. Configure your desired deployment setting in the 'Deploy' tab. 
 15. Choose whether to 'Enable Automatic Deploys,' for automatic deployment, when you push updates to Github, or not.
 
 ## Final Deployment to Heroku 
 
-1. Create a runtime.txt: `python-3.8.13`. 
+1. Create a runtime.txt, by entering: `python-3.8.13`. 
 2. Ensure that  `DEBUG = False` in settings.py before any deployment. 
 3. Add: `X_FRAME_OPTIONS = SAMEORIGIN` to settings.py.
 4. In Heroku settings, delete the Config Vars entry: `DISABLE_COLLECTSTATIC = 1`. 
@@ -384,7 +384,7 @@ I luckily only had a couple of bugs to deal with, during the creation of this pr
 * The site's hero image was taken from [Pixabay.com](https://pixabay.com/), and uploaded using Cloudinary. 
 * Some of the blogpost's featured images were taken from [Pexels.com](https://pexels.com/).
 * The 'Nordic Shows' blogpost featured image was taken from [BBC.com](https://www.bbc.co.uk/programmes/m0002qyz). 
-* The 'Lego' blogpost featured image was taken from [ideabrickworks.com](https://ideabrickworks.com/the-art-and-fun-of-the-mosaic/). 
+* The 'Lego' blogpost featured image was taken from [Ideabrickworks.com](https://ideabrickworks.com/the-art-and-fun-of-the-mosaic/). 
 * The 'Thor' blogpost featured image was taken from [CBR.com](https://www.cbr.com/marvel-thor-norse-mythology-same-different/). 
 * The 'Finland' blogpost featured image was taken from [Heavymetalknitting.com](https://heavymetalknitting.com/). 
 * The 'Iceland' blogpost featured image was taken from [Whatson.is](https://www.whatson.is/five-really-very-strong-icelanders-mens-edition/). 
