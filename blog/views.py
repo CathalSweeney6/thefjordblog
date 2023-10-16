@@ -1,11 +1,18 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
 from django.db.models import Q
+from django.urls import reverse_lazy
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, redirect
+from django.views.generic.edit import UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib import messages
+
 
 # View for list of posts on home page
 
@@ -138,3 +145,28 @@ def success(request):
     else:
         print("else block")
         return render(request, 'success.html', {})
+
+
+# View for deleting a comment as Site User
+
+@login_required
+def delete_user_comment(request, comment_id):
+    """ Delete comment
+    """
+    comment = get_object_or_404(Comment, id=comment_id)
+    comment.delete()
+    messages.success(request, 'Your comment was deleted successfully')
+    return HttpResponseRedirect(reverse(
+        'post_detail', args=[comment.post.slug]))
+
+# View for editing a comment as Site User
+
+
+class EditComment(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    Edit comment
+    """
+    model = Comment
+    template_name = 'edit_user_comment.html'
+    form_class = CommentForm
+    success_message = 'Your comment was successfully updated, Skål!'
