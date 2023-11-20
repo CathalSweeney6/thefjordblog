@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 {% load crispy_forms_tags %}
+{% load static %} 
 {% load account socialaccount %}
 
 <div class="masthead">
@@ -85,6 +86,7 @@
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         <!-- Commenter Name Area -->
+                     <img class="comment_pic" src="{% static 'images/comment_pic.png' %}" alt="comment_picture">
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
                             <!-- Comment Published Date Area -->

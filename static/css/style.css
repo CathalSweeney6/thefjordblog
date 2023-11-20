@@ -83,9 +83,16 @@ body {
     width: 95px;
     position: absolute;
     bottom: 14%;
-    min-width: 30%;
     left: 9px;
 }
+
+.comment_pic {
+    width: 95px;
+    position: inherit;
+    bottom: 14%;
+    left: 9px;
+}
+
 
 .author {
     color: white;
