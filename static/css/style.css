@@ -209,7 +209,6 @@ label[for="id_body"] {
 @media screen and (max-width: 1024px) {
     .admin_pic {
         width: 60px;
-        bottom: auto;
     }
 }
 
