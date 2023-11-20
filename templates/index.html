@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %} 
 {% block content %}
 
 <div class="container-fluid">
@@ -20,7 +20,7 @@
                                 <img class="card-img-top" src=" {{ article.featured_image.url }}" alt="article_image">
                                 {% endif %}
                                 <div class="admin_pic">
-                                    <img class="admin_pic" src="../static/images/admin_pic.png" alt="admin_picture">
+                                    <img class="admin_pic" src="{% static 'images/admin_pic.png' %}" alt="admin_picture">
                                 </div>
                                 <div class="image-flash">
                                     <p class="author">Author: {{ article.author }}</p>
