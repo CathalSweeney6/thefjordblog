@@ -87,7 +87,7 @@ body {
 }
 
 .comment_pic {
-    width: 95px;
+    width: 60px;
     position: inherit;
     bottom: 14%;
     left: 9px;
@@ -205,6 +205,13 @@ label[for="id_body"] {
 
 
 /* Removes the background image from smaller device */
+
+@media screen and (max-width: 1024px) {
+    .admin_pic {
+        width: 60px;
+        bottom: auto;
+    }
+}
 
 @media screen and (max-width: 767px) {
 
