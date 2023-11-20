@@ -3,9 +3,9 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('', views.PostList.as_view(), name='home'),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
+    path('', views.ArticleList.as_view(), name='home'),
+    path('<slug:slug>/', views.ArticleDetail.as_view(), name='article_detail'),
+    path('like/<slug:slug>', views.ArticleLike.as_view(), name='article_like'),
     path('delete_user_comment/<int:comment_id>',
          views.delete_user_comment, name='delete_user_comment'),
     path('edit_user_comment/<int:pk>', views.EditComment.as_view(),

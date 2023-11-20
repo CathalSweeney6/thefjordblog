@@ -20,7 +20,7 @@
 - [Features](#features)
     - [Navbar](#navbar)
     - [Collection of Blogposts](#collection-of-blogposts)
-    - [Post Detail Page](#post-detail-page)
+    - [Article Detail Page](#article-detail-page)
     - [The Next Button](#the-next-button)
     - [Like Button and Comments Section](#like-button-and-comments-section)
     - [Edit Comments Page](#edit-comments-page)
@@ -154,7 +154,7 @@ The home page shows all of the submitted blogpost links in order of publication.
 
 <img src="./static/Screenshots/collection_posts.png" width="80%" height="80%">
 
-#### Post Detail Page
+#### Article Detail Page
 
 The post detail page features the post in-full, along with its specific featured image. Underneath each post, users are prompted to either sign in, or sign up for an account, should they wish to like the post, or leave a comment for submission. This prompt includes links to the 'Login' and 'Register' pages. 
 

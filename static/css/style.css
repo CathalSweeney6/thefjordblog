@@ -79,6 +79,14 @@ body {
     background-color: #508da9;
 }
 
+.admin_pic {
+    width: 95px;
+    position: absolute;
+    bottom: 14%;
+    min-width: 30%;
+    left: 9px;
+}
+
 .author {
     color: white;
     margin: 4px;
@@ -119,22 +127,22 @@ body {
     z-index: 100;
 }
 
-.post-link {
+.article-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.article-link:hover,
 .page-link {
     color: #508da9;
 }
 
-.post-title {
+.article-title {
     margin-top: 20%;
     margin-left: 5%;
 }
 
-.post-subtitle {
+.article-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
