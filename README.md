@@ -17,6 +17,8 @@
     - [Site Logo and Typography](#site-logo-and-typography)
     - [Hero Image](#hero-image)
     - [Favicon Image](#favicon-image)
+    - [Admin Profile Picture](#admin-profile-picture)
+    - [Commenter Profile Picture](#commenter-profile-picture)
 - [Features](#features)
     - [Navbar](#navbar)
     - [Collection of Blogposts](#collection-of-blogposts)
@@ -139,6 +141,18 @@ The site features a Hero Image of Norway's Lofoten Islands. This image is surrou
 I added a favicon file to my project, that loads up alongside the site's name in the browser tab.
 
 <img src="./static/images/favicon.png" width="50%" height="50%">   
+
+#### Admin Profile Picture
+
+I added a profile picture for the site admin, that loads up alongside their author tab, on post previews.
+
+<img src="./static/images/admin_pic.png" width="20%" height="20%">   
+
+#### Commenter Profile Picture
+
+I added a profile picture for those that have commented on a post, this loads up alongside their username, in the comment section of each post.
+
+<img src="./static/images/comment_pic.png" width="40%" height="40%">
 
 ### Features 
 
@@ -382,6 +396,8 @@ I luckily only had a couple of bugs to deal with, during the creation of this pr
 * The site's logo font was taken from [cdnfonts.com](https://www.cdnfonts.com/baron-neue.font). 
 * The site's icons were taken from [fontawesome.com](https://fontawesome.com). 
 * The site's hero image was taken from [Pixabay.com](https://pixabay.com/), and uploaded using Cloudinary. 
+* The site's favicon image was taken from [freepik.com](https://www.freepik.com/).
+* The Admin and Commenter profile pictures were taken from [istockphoto.com](https://www.istockphoto.com/).
 * Some of the blogpost's featured images were taken from [Pexels.com](https://pexels.com/).
 * The 'Nordic Shows' blogpost featured image was taken from [BBC.com](https://www.bbc.co.uk/programmes/m0002qyz). 
 * The 'Lego' blogpost featured image was taken from [Ideabrickworks.com](https://ideabrickworks.com/the-art-and-fun-of-the-mosaic/). 
