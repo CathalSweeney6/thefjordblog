@@ -154,6 +154,11 @@ body {
     color: lightgray;
 }
 
+#categories {
+    font-style: italic;
+    font-weight:bold;
+}
+
 .btn-signup {
     background-color: #508da9;
     color: #fff;
