@@ -32,6 +32,8 @@
     - [Logout Page](#logout-page)
     - [Contact Form](#contact-form)
     - [Success Page](#success-page)
+    - [Newsletter Page](#newsletter-page)
+    - [Newsletter Success Page](#newsletter-success-page)
     - [Footer](#footer)
 - [Superuser / Admin Site ](#superuser--admin-site)
 - [Database Diagram](#database-diagram)
@@ -436,5 +438,5 @@ I luckily only had a couple of bugs to deal with, during the creation of this pr
 
 * [Stack Overflow](https://stackoverflow.com/).
 * [W3Schools](https://www.w3schools.com/).
-* The searchbar, and contact form, were created by following turorials by [Codemy.com](https://www.youtube.com/watch?v=AGtae4L5BbI).
+* The searchbar, contact form, and newsletter, were created by following turorials by [Codemy.com](https://www.youtube.com/watch?v=AGtae4L5BbI).
 * The edit/delete user comment feature was created by following a tutorial by [Medium.com](https://legionscript.medium.com/building-a-social-media-site-with-python-and-django-part-4-edit-delete-posts-add-comments-8e6ca1ef0441). 
