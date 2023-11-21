@@ -57,3 +57,10 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+class Newsletter(models.Model):
+    email = models.EmailField(null=False, blank=False)
+
+
+    def __str__(self):
+        return self.email

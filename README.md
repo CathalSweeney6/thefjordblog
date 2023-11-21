@@ -154,6 +154,7 @@ I added a profile picture for those that have commented on a post, this loads up
 
 <img src="./static/images/comment_pic.png" width="40%" height="40%">
 
+
 ### Features 
 
 #### Navbar
@@ -162,11 +163,13 @@ The navbar features the site's logo, which also acts as a link to the home page,
 
 <img src="./static/Screenshots/navbar_menu.png" width="50%" height="50%">
 
+
 #### Collection of Blogposts
 
 The home page shows all of the submitted blogpost links in order of publication. The blogpost links feature the post's featured image, along with a tagline and a snippet of the post. Users can click on each post and read the post on the specific post detail page, once loaded. 
 
 <img src="./static/Screenshots/collection_posts.png" width="80%" height="80%">
+
 
 #### Article Detail Page
 
@@ -174,12 +177,14 @@ The post detail page features the post in-full, along with its specific featured
 
 <img src="./static/Screenshots/post_detail.png" width="80%" height="80%">
 
+
 #### The Next Button
 
 The home screen paginates blogposts with a post cut-off of 6, per page. Users can click the 'Next' button, above the site's footer, to load more blogposts. 
 
 
 <img src="./static/Screenshots/next.png" width="50%" height="50%">
+
 
 #### Like Button and Comments Section
 
@@ -194,6 +199,7 @@ Logged in Users have the ability to add, edit or delete their own comments. The 
 
 
 <img src="./static/Screenshots/edit_comment.png" width="80%" height="80%">
+
 
 #### Search Results Page 
 
@@ -226,6 +232,7 @@ When logged in, the 'Logout' link sits in the place of the 'Login' link, on the 
 
 <img src="./static/Screenshots/logout.png" width="80%" height="80%">
 
+
 #### Contact Form
 
 Users can contact the site by clicking the 'Contact Us' link on the navbar. Users can then enter their name, email and message into a contact form. When the user clicks the 'Submit' button on the contact form, they are directed to the 'Success' page. The Contact form is connected to the models.py, urls.py, forms.py and, views.py and admin.py files, meaning that when a message is sent, the site admin can view their message in the admin page. 
@@ -235,12 +242,27 @@ Users can contact the site by clicking the 'Contact Us' link on the navbar. User
 
 <img src="./static/Screenshots/contact_admin.png" width="80%" height="80%">
 
+
 #### Success Page
 
 The success page displays a message, that informs the user that their message was sent successfully. Here, they can easily return to the home page, by simply clicking on the site's logo or 'Home' link, on the navbar. 
 
-
 <img src="./static/Screenshots/success.png" width="80%" height="80%">
+
+
+#### Newsletter Page
+
+The Newsletter page allows users, that wish to subscribe to the site's newsletter, to submit their email address to the mailing list, which is viewable by the admin on the admin page. 
+
+<img src="./static/Screenshots/newsletter.png" width="80%" height="80%">
+
+
+#### Newsletter Success Page
+
+The newsletter success page displays a message, that informs the user that they have been added to the mailing list. Here, they can easily return to the home page, by simply clicking on the site's logo or 'Home' link, on the navbar. 
+
+<img src="./static/Screenshots/newsletter_success.png" width="80%" height="80%">
+
 
 #### Footer
 
@@ -249,12 +271,13 @@ The site's footer is similar in style to the navbar, and features icons as links
 
 <img src="./static/Screenshots/footer.png" width="50%" height="50%">
 
+
 ### Superuser / Admin Site 
 
 As a site Admin, I could create, edit and delete posts on the site, as well as approve user comments, and monitor and delete user profiles and email addresses, by using the built in Django administration site, for my project. 
 
-
 <img src="./static/Screenshots/admin.png" width="80%" height="80%">
+
 
 ### Database Diagram
 

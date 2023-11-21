@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Article, Comment, Contact
-from .forms import CommentForm, ContactForm
+from .models import Article, Comment, Contact, Newsletter
+from .forms import CommentForm, ContactForm, NewsletterForm
 from django.db.models import Q
 from django.urls import reverse_lazy
 from django.core.mail import send_mail, BadHeaderError
@@ -45,7 +45,8 @@ class ArticleDetail(View):
                 "commented": False,
                 "liked": liked,
                 "comment_form": CommentForm(),
-                "contact_form": ContactForm()
+                "contact_form": ContactForm(),
+                "newsletter_form": NewsletterForm()
             },
         )
 
@@ -138,8 +139,22 @@ def contact(request):
     }
     return render(request, 'contact.html', context)
 
+# View for the newsletter subscription form
 
-# View for the success message page
+def newsletter(request):
+    form = NewsletterForm()
+    if request.method == 'POST':
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('success_newsletter')            
+    context = {
+        'form': form
+    }
+    return render(request, 'newsletter.html', context)
+
+
+# View for the success message pages
 
 
 def success(request):
@@ -152,6 +167,16 @@ def success(request):
         print("else block")
         return render(request, 'success.html', {})
 
+
+def success_newsletter(request):
+    if request.method == "POST":
+        # success = request.POST['success_newsletter']
+        print("if block")
+        return render(request, 'success_newsletter.html')
+
+    else:
+        print("else block")
+        return render(request, 'success_newsletter.html', {})
 
 # View for deleting a comment as Site User
 

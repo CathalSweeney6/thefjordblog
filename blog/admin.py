@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Article, Comment, Contact
+from .models import Article, Comment, Contact, Newsletter
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -27,3 +27,7 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'email')
+
+@admin.register(Newsletter)
+class NewsletterAdmin(admin.ModelAdmin):
+    list_display = ('email',)
