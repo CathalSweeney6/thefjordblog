@@ -228,7 +228,7 @@ When logged in, the 'Logout' link sits in the place of the 'Login' link, on the 
 
 #### Contact Form
 
-Users can contact the site by clicking the 'Contact Us' link on the navbar. Users can then enter their name, email and message into a contact form. When the user clicks the 'Submit' button on the contact form, they are directed to the 'Success' page. 
+Users can contact the site by clicking the 'Contact Us' link on the navbar. Users can then enter their name, email and message into a contact form. When the user clicks the 'Submit' button on the contact form, they are directed to the 'Success' page. The Contact form is connected to the models.py, urls.py, forms.py and, views.py and admin.py files, meaning that when a message is sent, the site admin can view their message in the admin page. 
 
 
 <img src="./static/Screenshots/contact.png" width="80%" height="80%">
