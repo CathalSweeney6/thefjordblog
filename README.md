@@ -233,6 +233,8 @@ Users can contact the site by clicking the 'Contact Us' link on the navbar. User
 
 <img src="./static/Screenshots/contact.png" width="80%" height="80%">
 
+<img src="./static/Screenshots/contact_admin.png" width="80%" height="80%">
+
 #### Success Page
 
 The success page displays a message, that informs the user that their message was sent successfully. Here, they can easily return to the home page, by simply clicking on the site's logo or 'Home' link, on the navbar. 
