@@ -5,15 +5,6 @@ from django.urls import reverse
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-ARTICLE_CATEGORIES = (
-    ('# Norway', '# Norway'),
-    ('# Sweden', '# Sweden'),
-    ('# Denmark', '# Denmark'),
-    ('# Finland', '# Finland'),
-    ('# Iceland', '# Iceland'),
-    ('# Nordic', '# Nordic'),)
-
-
 class Article(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -21,8 +12,6 @@ class Article(models.Model):
         User, on_delete=models.CASCADE, related_name="article_posts"
     )
     featured_image = CloudinaryField('image', default='placeholder')
-    categories = models.CharField(
-        max_length=50, choices=ARTICLE_CATEGORIES, default='# Nordic')
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
@@ -30,7 +19,6 @@ class Article(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='article_like', blank=True)
-    category =  models.TextField(blank=True, default='# Nordic')
 
     class Meta:
         ordering = ["-created_on"]
@@ -60,3 +48,12 @@ class Comment(models.Model):
     def get_absolute_url(self):
         """Sets absolute URL"""
         return reverse('article_detail', args=[self.article.slug])
+
+class Contact(models.Model):
+    name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(null=False, blank=False)
+    message = models.TextField(null=False, blank=False)
+    
+
+    def __str__(self):
+        return self.name

@@ -13,11 +13,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='article',
             name='categories',
-            field=models.CharField(choices=[('# Norway', '# Norway'), ('# Sweden', '# Sweden'), ('# Denmark', '# Denmark'), ('# Finland', '# Finland'), ('# Iceland', '# Iceland'), ('# Nordic', '# Nordic')], default='# Nordic', max_length=50),
+            field=models.CharField(choices=[('Norway', 'Norway'), ('Sweden', 'Sweden'), ('Denmark', 'Denmark'), ('Finland', 'Finland'), ('Iceland', 'Iceland'), ('Nordic', 'Nordic')], default='Nordic', max_length=50),
         ),
         migrations.AddField(
             model_name='article',
             name='category',
-            field=models.TextField(blank=True, default='# Nordic'),
+            field=models.TextField(blank=True, default='Nordic'),
         ),
     ]

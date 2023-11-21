@@ -22,7 +22,6 @@
 - [Features](#features)
     - [Navbar](#navbar)
     - [Collection of Blogposts](#collection-of-blogposts)
-    - [Article Categories](#article_categories)
     - [Article Detail Page](#article-detail-page)
     - [The Next Button](#the-next-button)
     - [Like Button and Comments Section](#like-button-and-comments-section)
@@ -174,14 +173,6 @@ The home page shows all of the submitted blogpost links in order of publication.
 The post detail page features the post in-full, along with its specific featured image. Underneath each post, users are prompted to either sign in, or sign up for an account, should they wish to like the post, or leave a comment for submission. This prompt includes links to the 'Login' and 'Register' pages. 
 
 <img src="./static/Screenshots/post_detail.png" width="80%" height="80%">
-
-#### Article Categories 
-
-The site Admin can tag each article with the country that theyare focused on, making it easier for users to navigate through the site, and find posts that would interest them more than others. 
-
-<img src="./static/Screenshots/category_list.png" width="50%" height="50%">
-
-<img src="./static/Screenshots/category.png" width="50%" height="50%">
 
 #### The Next Button
 
@@ -420,5 +411,5 @@ I luckily only had a couple of bugs to deal with, during the creation of this pr
 
 * [Stack Overflow](https://stackoverflow.com/).
 * [W3Schools](https://www.w3schools.com/).
-* The searchbar, contact form and categories, were created by following turorials by [Codemy.com](https://www.youtube.com/watch?v=AGtae4L5BbI).
+* The searchbar, and contact form, were created by following turorials by [Codemy.com](https://www.youtube.com/watch?v=AGtae4L5BbI).
 * The edit/delete user comment feature was created by following a tutorial by [Medium.com](https://legionscript.medium.com/building-a-social-media-site-with-python-and-django-part-4-edit-delete-posts-add-comments-8e6ca1ef0441). 

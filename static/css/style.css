@@ -154,11 +154,6 @@ body {
     color: lightgray;
 }
 
-#categories {
-    font-style: italic;
-    font-weight:bold;
-}
-
 .btn-signup {
     background-color: #508da9;
     color: #fff;
@@ -166,6 +161,18 @@ body {
 
 .btn-signup:hover,
 .btn-signup:active {
+    background-color: #fff;
+    color: #508da9;
+}
+
+.btn-contact {
+    background-color: #508da9;
+    color: #fff;
+    width: 200px;
+}
+
+.btn-contact:hover,
+.btn-contact:active {
     background-color: #fff;
     color: #508da9;
 }
@@ -202,6 +209,9 @@ label[for="id_body"] {
    display: none;
 }
 
+#contact_us {
+    width: 300px;
+}
 
 
 /* Removes the background image from smaller device */
@@ -210,9 +220,20 @@ label[for="id_body"] {
     .admin_pic {
         width: 60px;
     }
+
+    #id_body {
+        width: 200px;
+    }
+}   
+
+@media screen and (max-width: 992px) {
+
+    img, svg {
+    height: 100%;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .bg-image {
         display: none;

@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Article, Comment
-from .forms import CommentForm
+from .models import Article, Comment, Contact
+from .forms import CommentForm, ContactForm
 from django.db.models import Q
 from django.urls import reverse_lazy
 from django.core.mail import send_mail, BadHeaderError
@@ -44,7 +44,8 @@ class ArticleDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm()
+                "comment_form": CommentForm(),
+                "contact_form": ContactForm()
             },
         )
 
@@ -67,6 +68,17 @@ class ArticleDetail(View):
         else:
             comment_form = CommentForm()
 
+
+        contact_form = ContactForm(data=request.POST)
+        if contact_form.is_valid():
+            contact_form.instance.email = request.user.email
+            contact_form.instance.name = request.user.username
+            contact = contact_form.save(commit=False)
+            contact.article = article
+            contact.save()
+        else:
+            contact_form = ContactForm()
+
         return render(
             request,
             "article_detail.html",
@@ -75,7 +87,8 @@ class ArticleDetail(View):
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-                "liked": liked
+                "liked": liked,
+                "contact_form": contact_form
             },
         )
 
@@ -113,25 +126,18 @@ def search(request):
 
 # View for the contact form
 
-
 def contact(request):
-    if request.method == "POST":
-        message_name = request.POST['message-name']
-        message_email = request.POST['message-email']
-        message = request.POST['message']
+    form = ContactForm()
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('success')            
+    context = {
+        'form': form
+    }
+    return render(request, 'contact.html', context)
 
-        # send an email
-        send_mail(
-                message_name,  # subject
-                message,  # message
-                message_email,  # from email
-                ['https://formdump.codeinstitute.net/'],  # To Email
-                )
-
-        return render(request, 'contact.html', {'message_name': message_name})
-
-    else:
-        return render(request, 'contact.html', {})
 
 # View for the success message page
 
