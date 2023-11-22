@@ -258,6 +258,8 @@ The Newsletter page allows users, that wish to subscribe to the site's newslette
 
 <img src="./static/Screenshots/newsletter.png" width="80%" height="80%">
 
+<img src="./static/Screenshots/newsletter_admin.png" width="80%" height="80%">
+
 
 #### Newsletter Success Page
 
