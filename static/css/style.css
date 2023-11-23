@@ -215,6 +215,7 @@ label[for="id_body"] {
 /* Removes the background image from smaller device */
 
 @media screen and (max-width: 1024px) {
+
     .admin_pic {
         width: 60px;
     }
@@ -229,12 +230,8 @@ label[for="id_body"] {
     img, svg {
     height: 100%;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .bg-image {
+.bg-image {
         display: none;
     }
 }
-

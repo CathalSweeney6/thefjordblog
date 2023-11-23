@@ -12,7 +12,7 @@ urlpatterns = [
          name='edit_user_comment'),
     path('search', views.search, name='search'),
     path('contact', views.contact, name="contact"),
-    path('success.html', views.success, name="success"),
+    path('success', views.success, name="success"),
     path('newsletter', views.newsletter, name="newsletter"),
     path(
      'success_newsletter',
