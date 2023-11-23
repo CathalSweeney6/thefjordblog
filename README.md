@@ -4,50 +4,6 @@
 
 ![screenshot](documentation/screenshots/amiresposnive.png)
 
-## Table of Contents
-
-- [User Experience - UX](#user-experience---ux)
-    - [User Stories](#user-stories)
-    - [Agile Methodology](#agile-methodology)
-- [Planning Out My Project](#planning-out-my-project)
-    - [Site Goals](#site-goals)
-    - [Wireframe Design](#wireframe-design)
-- [Site Design and Layout](#site-design-and-layout)
-    - [Colour Scheme](#colour-scheme)
-    - [Site Logo and Typography](#site-logo-and-typography)
-    - [Hero Image](#hero-image)
-    - [Favicon Image](#favicon-image)
-    - [Admin Profile Picture](#admin-profile-picture)
-    - [Commenter Profile Picture](#commenter-profile-picture)
-- [Features](#features)
-    - [Navbar](#navbar)
-    - [Collection of Blogposts](#collection-of-blogposts)
-    - [Article Detail Page](#article-detail-page)
-    - [The Next Button](#the-next-button)
-    - [Like Button and Comments Section](#like-button-and-comments-section)
-    - [Edit Comments Page](#edit-comments-page)
-    - [Search Results Page](#search-results-page)
-    - [Account Register Page](#account-register-page)
-    - [Login Page](#login-page)
-    - [Logout Page](#logout-page)
-    - [Contact Form](#contact-form)
-    - [Success Page](#success-page)
-    - [Newsletter Page](#newsletter-page)
-    - [Newsletter Success Page](#newsletter-success-page)
-    - [Footer](#footer)
-- [Superuser / Admin Site ](#superuser--admin-site)
-- [Database Diagram](#database-diagram)
-- [Technologies Used](#technologies-used)
-    - [Site Languages](#site-languages)
-    - [Django Packages](#django-packages)
-    - [Frameworks, and Misc. Libraries and Programs](#frameworks-and-misc-libraries-and-programs)
- - [Testing](#testing)
- - [Setting Up a Django App](#setting-up-a-django-app)
- - [Deployment to Heroku](#deployment-to-heroku)
- - [Final Deployment to Heroku](#final-deployment-to-heroku)
- - [Credits](#credits)
- - [Resources Used](#resources-used)
-
 
 # User Experience - UX #
 
@@ -328,6 +284,10 @@ Testing was carried out extensively, whilst creating and publishing my site. As 
 
 ![screenshot](documentation/screenshots/devcon.png)
 
+
+![screenshot](documentation/screenshots/manualtests.png)
+
+
 #### Lighthouse 
 
 I tested my site on Google's 'Lighthouse' feature, which pointed out ways in which I could improve the website for a smoother load-time and better user experience on desktop, tablet and mobile. I took Lighthouse's advice on board and was delighted with my results. 
@@ -337,10 +297,21 @@ I tested my site on Google's 'Lighthouse' feature, which pointed out ways in whi
 
 #### W3 HTML Validation 
 
-I ran my html through W3's html validation site, and received no errors. 
+I ran all of my html through W3's html validation site, and received no errors. 
 
 
-![screenshot](documentation/screenshots/html.png)
+![screenshot](documentation/screenshots/html1.png)
+
+![screenshot](documentation/screenshots/html2.png)
+
+
+![screenshot](documentation/screenshots/html3.png)
+
+
+![screenshot](documentation/screenshots/html4.png)
+
+
+![screenshot](documentation/screenshots/html5.png)
 
 #### W3 CSS Validation 
 
@@ -354,7 +325,21 @@ I also ran my CSS through W3's CSS validation site, and received no errors.
 I validated the Pyhon files of my project using Code Institute's Python Linter. My code was found to have no errors on each file. 
 
 
-![screenshot](documentation/screenshots/python.png)
+![screenshot](documentation/screenshots/python1.png)
+
+![screenshot](documentation/screenshots/python2.png)
+
+![screenshot](documentation/screenshots/python3.png)
+
+![screenshot](documentation/screenshots/python4.png)
+
+![screenshot](documentation/screenshots/python5.png)
+
+![screenshot](documentation/screenshots/python6.png)
+
+![screenshot](documentation/screenshots/python7.png)
+
+![screenshot](documentation/screenshots/python8.png)
 
 #### JavaScript Validation 
 
@@ -367,9 +352,14 @@ My site includes one block of JavaScript, that times out pop-up messages, such a
 
 * Users can successfully register, login and logout of their accounts on the site, as well as search for posts, like posts, leave comments and fill out a contact form.  Messages appear on the screen when users complete these actions. 
 * When a user wishes to create an account, or log in, they are prompted to fill in the required fields, in order to do so. 
+
+![screenshot](documentation/screenshots/login.png)
+
 * All links in the site work, allowing the user to access all of the posts, and navbar sections, as well as the external social media icon links in the site's footer.
 * The site is successfully paginated, with the number of posts, per-page, cutting off at six. Users can access the remainder of the posts by clicking the 'Next' button that sits above the footer section. 
 * CRUD functionality is established for users, as they have the ability to like/unlike posts, as well as the ability to submit, post, edit and delete comments. 
+
+![screenshot](documentation/screenshots/edit_comment.png)
 
 #### Backend 
 

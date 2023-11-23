@@ -215,7 +215,7 @@ label[for="id_body"] {
 /* Removes the background image from smaller device */
 
 @media screen and (max-width: 1024px) {
-
+    
     .admin_pic {
         width: 60px;
     }
