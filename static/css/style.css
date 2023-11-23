@@ -212,7 +212,6 @@ label[for="id_body"] {
     width: 300px;
 }
 
-
 /* Removes the background image from smaller device */
 
 @media screen and (max-width: 1024px) {

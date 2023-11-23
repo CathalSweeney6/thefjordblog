@@ -15,9 +15,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!--Featured image URL -->
                 {% if "placeholder" in article.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="{{ article.title }}" class="w-100">
                 {% else %}
-                <img src=" {{ article.featured_image.url }}" width="100%">
+                <img src=" {{ article.featured_image.url }}" alt="{{ article.title }}" class="w-100">
                 {% endif %}
             </div>
         </div>
@@ -29,30 +29,28 @@
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
                 <!-- Post Content Area -->
-                <p class="card-text ">
+                <div class="card-text ">
                     {{ article.content | safe }}
-                </p>
+                </div>
                 <br>
                 <br>
                 <div class="row">
 
-                    <div class="col-1">
-                        <strong>
-                            {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'article_like' article.slug %}" method="POST">
-                                {% csrf_token %}
-                                {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
-                                {% else %}
-                                <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
-                                {% endif %}
-                            </form>
+                    <div class="col-1 fw-bold">
+                        {% if user.is_authenticated %}
+                        <form class="d-inline" action="{% url 'article_like' article.slug %}" method="POST">
+                            {% csrf_token %}
+                            {% if liked %}
+                            <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-thumbs-up"></i></span>
+                            <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
                             {% endif %}
+                        </form>
+                        {% else %}
+                        <span class="text-secondary"><i class="far fa-thumbs-up"></i></span>
+                        {% endif %}
                         <!-- Likes Display Area -->
                         <span class="text-secondary">{{ article.number_of_likes }} </span>
-                        </strong>
                     </div>
                     <br>
                     <div class="col-1">
@@ -100,7 +98,7 @@
                 <!-- Edits or Deletes User Comments  -->
                 {% if user.is_authenticated and user.username == comment.name or user.is_superuser %}
                 <a href="{% url 'edit_user_comment' comment.id %}" class="link" aria-label="Go to the Edit Comments Page">Edit &emsp;</a>
-                <a  type="button" class="link" data-bs-toggle="modal" data-bs-target="#delete-comment">Delete</a>
+                <a href="" type="submit" class="link" data-bs-toggle="modal" data-bs-target="#delete-comment">Delete</a>
                 <br><br>
                     <!-- Bootstrap modal to Delete Comment -->
                 <div class="modal" id="delete-comment" tabindex="-1" role="dialog">

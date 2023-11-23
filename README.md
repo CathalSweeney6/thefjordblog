@@ -2,7 +2,7 @@
 
 'The Fjord,' is my Project 4 submission, under the 'Project Idea 0' choice of build and design. The site is a blogsite that focuses on all things Nordic! The site features interesting and quirky facts about the Nordic countries. Users have the ability to create profiles on the site, login, like posts, and leave comments. Those with or without a site profile, can search the site for posts using the searchbar on the navbar. They can also fill out a contact form, which displays a success message, when their message is sent. 
 
-<img src="./static/Screenshots/amiresposnive.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/amiresposnive.png)
 
 ## Table of Contents
 
@@ -80,7 +80,7 @@
 
 Alongside the logging of my User Stories, I ran manual tests for each of them, and logged the results on a Microsoft Excel file. Here are my results:
 
-<img src="./static/Screenshots/manualtests.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/manualtests.png)
 
 ### Agile Methodology
 
@@ -103,7 +103,7 @@ I originally planned on creating a Django site for a restaurant that served Nord
 
 Prior to writing any code, I designed the wireframe for my site using Balsamiq. The wireframe differred slightly from the finished project, though the basic mainframe idea was there. 
 
-<img src="./static/Screenshots/balsamiq.png" width="60%" height="60%">
+![screenshot](documentation/screenshots/balsamiq.png)
 
 ### Site Design and Layout
 
@@ -112,21 +112,21 @@ Prior to writing any code, I designed the wireframe for my site using Balsamiq. 
 I researched other sites that focused on Nordic aspects. I found that these sites shared a common feature of a muted colour scheme. I took this inspiration on board and began to design my site. 
 I chose a muted charcoal tone for the navbar and blog tagline text.
 
-<img src="./static/Screenshots/colour_navbar.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/colour_navbar.png)
 
 I chose a muted green colour for the main site background colour. I found this shade of green reflected the natural aspect of the Nordic landscape. 
 
-<img src="./static/Screenshots/colour_site_bg.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/colour_site_bg.png)
 
 I chose a muted blue for the author tags and buttons, as I believe it contrasts well against the muted green background and charcoal elements. 
 
-<img src="./static/Screenshots/colour_tags_buttons.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/colour_tags_buttons.png)
 
 #### Site Logo and Typography
 
 I wanted the site's logo to be font-based, and I wanted the selected font to be reflective of the site's focus on Nordic culture. I chose 'Baron Neue,' as I thought the font's modernity, along with its rugged, angular style, reflected this the most. 
 
-<img src="./static/Screenshots/logo.png" width="50%" height="50%">
+![screenshot](documentation/screenshots/logo.png)
 
 I also chose to include the 'Roboto' and 'Raleway' fonts as fonts for the sites text, as they are clear and have been reliable on previous projects. 
 
@@ -134,27 +134,27 @@ I also chose to include the 'Roboto' and 'Raleway' fonts as fonts for the sites 
 
 The site features a Hero Image of Norway's Lofoten Islands. This image is surrounded by a box-shadow, that blends the image into the background more. I chose this image as it features idyllic imagery of coastal cottages and fjords. The image is media-queried out of display on smaller devices, to make navigating the site, and reading blogposts, easier for users. 
 
-<img src="./static/images/main_img.jpeg" width="80%" height="80%">   
+![screenshot](static/images/main_img.jpeg)
 
-<img src="./static/Screenshots/media_query_no_img.png" width="50%" height="50%">
+![screenshot](documentation/screenshots/media_query_no_img.png)
 
 #### Favicon Image
 
 I added a favicon file to my project, that loads up alongside the site's name in the browser tab.
 
-<img src="./static/images/favicon.png" width="50%" height="50%">   
+![screenshot](static/images/favicon.png)
 
 #### Admin Profile Picture
 
 I added a profile picture for the site admin, that loads up alongside their author tab, on post previews.
 
-<img src="./static/images/admin_pic.png" width="20%" height="20%">   
+![screenshot](static/images/admin_pic.png)
 
 #### Commenter Profile Picture
 
 I added a profile picture for those that have commented on a post, this loads up alongside their username, in the comment section of each post.
 
-<img src="./static/images/comment_pic.png" width="40%" height="40%">
+![screenshot](static/images/comment_pic.png)
 
 
 ### Features 
@@ -163,21 +163,21 @@ I added a profile picture for those that have commented on a post, this loads up
 
 The navbar features the site's logo, which also acts as a link to the home page, along with links to the home page, the login/logout page, the register page, the contact form page, and the searchbar, where users can search for posts. The navbar also includes the site's tagline, 'The Nordic Nerd Blog!'
 
-<img src="./static/Screenshots/navbar_menu.png" width="50%" height="50%">
+![screenshot](documentation/screenshots/navbar_menu.png)
 
 
 #### Collection of Blogposts
 
 The home page shows all of the submitted blogpost links in order of publication. The blogpost links feature the post's featured image, along with a tagline and a snippet of the post. Users can click on each post and read the post on the specific post detail page, once loaded. 
 
-<img src="./static/Screenshots/collection_posts.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/collection_posts.png)
 
 
 #### Article Detail Page
 
 The post detail page features the post in-full, along with its specific featured image. Underneath each post, users are prompted to either sign in, or sign up for an account, should they wish to like the post, or leave a comment for submission. This prompt includes links to the 'Login' and 'Register' pages. 
 
-<img src="./static/Screenshots/post_detail.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/post_detail.png)
 
 
 #### The Next Button
@@ -185,7 +185,7 @@ The post detail page features the post in-full, along with its specific featured
 The home screen paginates blogposts with a post cut-off of 6, per page. Users can click the 'Next' button, above the site's footer, to load more blogposts. 
 
 
-<img src="./static/Screenshots/next.png" width="50%" height="50%">
+![screenshot](documentation/screenshots/next.png)
 
 
 #### Like Button and Comments Section
@@ -193,14 +193,14 @@ The home screen paginates blogposts with a post cut-off of 6, per page. Users ca
 Once the user is logged in, the sign in/sign up prompt isn't displayed. They can now like and unlike the post and submit comments, to be approved by the site admin.
 
 
-<img src="./static/Screenshots/like_comment.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/like_comment.png)
 
 #### Edit Comments Page 
 
 Logged in Users have the ability to add, edit or delete their own comments. The Superuser/Admin can also complete this action.
 
 
-<img src="./static/Screenshots/edit_comment.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/edit_comment.png)
 
 
 #### Search Results Page 
@@ -208,7 +208,7 @@ Logged in Users have the ability to add, edit or delete their own comments. The 
 All users can use the searchbar on the navbar to search for posts, by word. If the search contains no characters, they will be prompted to enter their query into the searchbar. 
 
 
-<img src="./static/Screenshots/search.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/search.png)
 
 
 #### Account Register Page 
@@ -216,7 +216,7 @@ All users can use the searchbar on the navbar to search for posts, by word. If t
 Users wishing to create an account on the website, can do so by registering for an account on the 'Register' page. The user must create a username and secure password, and will be warned if the latter isn't so. They can also add an optional email address to their account, upon registering. 
 
 
-<img src="./static/Screenshots/register.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/register.png)
 
 
 #### Login Page
@@ -224,7 +224,7 @@ Users wishing to create an account on the website, can do so by registering for 
 Users enter their username and password into this page and can successfully login. When logged in, the user is redirected to the home page and will be greeted with a 'Successfully logged in as "..."' message. 
 
 
-<img src="./static/Screenshots/login.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/login.png)
 
 
 #### Logout Page
@@ -232,7 +232,7 @@ Users enter their username and password into this page and can successfully logi
 When logged in, the 'Logout' link sits in the place of the 'Login' link, on the navbar. Users click the link, and are asked if they want to sign out. Upon signing out, they are redirected to the home page and a message informs them that they have successfully signed out. 
 
 
-<img src="./static/Screenshots/logout.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/logout.png)
 
 
 #### Contact Form
@@ -240,32 +240,32 @@ When logged in, the 'Logout' link sits in the place of the 'Login' link, on the 
 Users can contact the site by clicking the 'Contact Us' link on the navbar. Users can then enter their name, email and message into a contact form. When the user clicks the 'Submit' button on the contact form, they are directed to the 'Success' page. The Contact form is connected to the models.py, urls.py, forms.py and, views.py and admin.py files, meaning that when a message is sent, the site admin can view their message in the admin page. 
 
 
-<img src="./static/Screenshots/contact.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/contact.png)
 
-<img src="./static/Screenshots/contact_admin.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/contact_admin.png)
 
 
 #### Success Page
 
 The success page displays a message, that informs the user that their message was sent successfully. Here, they can easily return to the home page, by simply clicking on the site's logo or 'Home' link, on the navbar. 
 
-<img src="./static/Screenshots/success.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/success.png)
 
 
 #### Newsletter Page
 
 The Newsletter page allows users, that wish to subscribe to the site's newsletter, to submit their email address to the mailing list, which is viewable by the admin on the admin page. 
 
-<img src="./static/Screenshots/newsletter.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/newsletter.png)
 
-<img src="./static/Screenshots/newsletter_admin.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/newsletter_admin.png)
 
 
 #### Newsletter Success Page
 
 The newsletter success page displays a message, that informs the user that they have been added to the mailing list. Here, they can easily return to the home page, by simply clicking on the site's logo or 'Home' link, on the navbar. 
 
-<img src="./static/Screenshots/newsletter_success.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/newsletter_success.png)
 
 
 #### Footer
@@ -273,14 +273,14 @@ The newsletter success page displays a message, that informs the user that they 
 The site's footer is similar in style to the navbar, and features icons as links to Facebook, Twitter, Instagram and YouTube. 
 
 
-<img src="./static/Screenshots/footer.png" width="50%" height="50%">
+![screenshot](documentation/screenshots/footer.png)
 
 
 ### Superuser / Admin Site 
 
 As a site Admin, I could create, edit and delete posts on the site, as well as approve user comments, and monitor and delete user profiles and email addresses, by using the built in Django administration site, for my project. 
 
-<img src="./static/Screenshots/admin.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/admin.png)
 
 
 ### Database Diagram
@@ -288,7 +288,7 @@ As a site Admin, I could create, edit and delete posts on the site, as well as a
 I used LucidChart to create a Database Diagram for my project.
 
 
-<img src="./static/Screenshots/chart.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/chart.png)
 
 ## Technologies Used 
 
@@ -326,42 +326,42 @@ I used LucidChart to create a Database Diagram for my project.
 
 Testing was carried out extensively, whilst creating and publishing my site. As my project featured various different elements interacting with one another, I wanted to insure that everything ran correctly. I checked my site's console, and had zero issues. 
 
-<img src="./static/Screenshots/devcon.png" width="50%" height="50%">
+![screenshot](documentation/screenshots/devcon.png)
 
 #### Lighthouse 
 
 I tested my site on Google's 'Lighthouse' feature, which pointed out ways in which I could improve the website for a smoother load-time and better user experience on desktop, tablet and mobile. I took Lighthouse's advice on board and was delighted with my results. 
 
 
-<img src="./static/Screenshots/lighthouse.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/lighthouse.png)
 
 #### W3 HTML Validation 
 
 I ran my html through W3's html validation site, and received no errors. 
 
 
-<img src="./static/Screenshots/html.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/html.png)
 
 #### W3 CSS Validation 
 
 I also ran my CSS through W3's CSS validation site, and received no errors. 
 
 
-<img src="./static/Screenshots/css.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/css.png)
 
 #### Python Validation 
 
 I validated the Pyhon files of my project using Code Institute's Python Linter. My code was found to have no errors on each file. 
 
 
-<img src="./static/Screenshots/python.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/python.png)
 
 #### JavaScript Validation 
 
 My site includes one block of JavaScript, that times out pop-up messages, such as the  'Successfully logged in as "...",' and 'Your comment is awaiting approval' messages. I ran my JavaScript through ExtendsClass' JavaScript validator. My JavaScript code was found to be free of errors and was syntactically valid. 
 
 
-<img src="./static/Screenshots/javascript.png" width="80%" height="80%">
+![screenshot](documentation/screenshots/javascript.png)
 
 #### Frontend
 
@@ -418,6 +418,147 @@ I luckily only had a couple of bugs to deal with, during the creation of this pr
 3. Add: `X_FRAME_OPTIONS = SAMEORIGIN` to settings.py.
 4. In Heroku settings, delete the Config Vars entry: `DISABLE_COLLECTSTATIC = 1`. 
 5. You can now deploy your app to Heroku!
+
+---
+
+The live deployed application can be found deployed on [Heroku](https://thefjord-b1491443270e.herokuapp.com).
+
+### ElephantSQL Database
+
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
+
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+
+- Click **Create New Instance** to start a new database.
+- Provide a name (this is commonly the name of the project: The Fjord).
+- Select the **Tiny Turtle (Free)** plan.
+- You can leave the **Tags** blank.
+- Select the **Region** and **Data Center** closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
+
+### Cloudinary API
+
+This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+
+To obtain your own Cloudinary API key, create an account and log in.
+
+- For *Primary interest*, you can choose *Programmable Media for image and video API*.
+- Optional: *edit your assigned cloud name to something more memorable*.
+- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
+- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
+- From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
+
+| Key | Value |
+| --- | --- |
+| `CLOUDINARY_URL` | user's own value |
+| `DATABASE_URL` | user's own value |
+| `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
+| `SECRET_KEY` | user's own value |
+
+Heroku needs two additional files in order to deploy properly.
+
+- requirements.txt
+- Procfile
+
+You can install this project's **requirements** (where applicable) using:
+
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+
+- `pip3 freeze --local > requirements.txt`
+
+The **Procfile** can be created with the following command:
+
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- *replace **app_name** with the name of your primary Django app name; the folder where settings.py is located*
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+
+- `pip3 install -r requirements.txt`.
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps.
+
+Sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("CLOUDINARY_URL", "user's own value")
+os.environ.setdefault("DATABASE_URL", "user's own value")
+os.environ.setdefault("SECRET_KEY", "user's own value")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DEBUG", "True")
+```
+
+Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+
+- Start the Django app: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
+- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
+
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/CathalSweeney6/thefjordblog) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/CathalSweeney6/thefjordblog.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CathalSweeney6/thefjordblog)
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CathalSweeney6/thefjordblog)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 ## Credits 
 
