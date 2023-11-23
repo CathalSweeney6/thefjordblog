@@ -322,7 +322,7 @@ I also ran my CSS through W3's CSS validation site, and received no errors.
 
 #### Python Validation 
 
-I validated the Pyhon files of my project using Code Institute's Python Linter. My code was found to have no errors on each file. 
+I validated the Python files of my project using Code Institute's Python Linter. My code was found to have no errors on each file. 
 
 
 ![screenshot](documentation/screenshots/python1.png)
