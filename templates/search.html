@@ -10,6 +10,7 @@
             <p class="card-text">If no results below. please search again using different terms.</p>
             <br>
             <div class="row">
+            </div>
                 <div class="col-12 mt-3 left">
                     <div class="row">
                         {% for article in article_list %}
@@ -21,7 +22,7 @@
                                         <img class="card-img-top"
                                             src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                                         {% else %}
-                                        <img class="card-img-top" src=" {{ article.featured_image.url }}">
+                                        <img class="card-img-top" alt="card-img_search" src=" {{ article.featured_image.url }}">
                                         {% endif %}
                                         <div class="image-flash">
                                             <p class="author">Author: {{ article.author }}</p>
@@ -31,7 +32,7 @@
                                         <h2 class="card-title">{{ article.title }}</h2>
                                         <p class="card-text">{{ article.excerpt }}</p>
                                     </a>
-                                    <hr/>
+                                    <hr>
                                     <p class="card-text text-muted h6">{{ article.created_on}} <i class="far fa-thumbs-up"></i>
                                         {{ article.number_of_likes }}</p>
                                 </div>

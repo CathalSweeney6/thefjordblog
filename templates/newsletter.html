@@ -12,24 +12,17 @@
 <div class="container">
 
   </div>
-  <center>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+  <div class="row" style="text-align: center;"></div>
+  <div class="col-md-8 mt-3 offset-md-5" style="text-align: center;">
       <form  id="contact_us" class="login" method="POST">
     <h3>Subscribe to Our Newsletter!</h3>
     <br>
         {% csrf_token %}
         {{ form | crispy }}
     <br>
-    </div>
     <br>
-    <center>
         <button class="btn btn-contact" type="submit">Submit</button>
-        </center>
       </form>
-      </center>
     </div>
-  </div>
   <br>
-</div>
 {% endblock %}

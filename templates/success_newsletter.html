@@ -7,12 +7,11 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container"></div>
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-md-8 mt-3 offset-md-2" style="text-align: center ;">
       {% csrf_token %}
-        <center>
-      <h3 class="alert alert-success" role="alert"> {% trans "Thank you for subscribing, keep an eye on your inbox! Skål!" %}</h3>
-        </center>
-
+      <h3 class="alert alert-success"> {% trans "Thank you for subscribing, keep an eye on your inbox! Skål!" %}</h3>
+  </div>
+  </div>
 {% endblock %}
