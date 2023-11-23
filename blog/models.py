@@ -5,6 +5,7 @@ from django.urls import reverse
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Article(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -31,8 +32,8 @@ class Article(models.Model):
 
 
 class Comment(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE,
-                             related_name="comments")
+    article = models.ForeignKey(
+        Article, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
@@ -49,18 +50,18 @@ class Comment(models.Model):
         """Sets absolute URL"""
         return reverse('article_detail', args=[self.article.slug])
 
+
 class Contact(models.Model):
     name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(null=False, blank=False)
-    message = models.TextField(null=False, blank=False)
-    
+    message = models.TextField(null=False, blank=False)    
 
     def __str__(self):
         return self.name
 
+
 class Newsletter(models.Model):
     email = models.EmailField(null=False, blank=False)
-
 
     def __str__(self):
         return self.email

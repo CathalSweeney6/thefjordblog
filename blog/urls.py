@@ -14,5 +14,8 @@ urlpatterns = [
     path('contact', views.contact, name="contact"),
     path('success.html', views.success, name="success"),
     path('newsletter', views.newsletter, name="newsletter"),
-    path('success_newsletter', views.success_newsletter, name="success_newsletter"),
+    path(
+     'success_newsletter',
+     views.success_newsletter,
+     name="success_newsletter"),
 ]

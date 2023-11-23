@@ -7,14 +7,14 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('body',)
 
+
 class ContactForm(forms.ModelForm):
-   class Meta:
+    class Meta:
         model = Contact
         fields = ('name', 'email', 'message',)
 
+
 class NewsletterForm(forms.ModelForm):
-   class Meta:
+    class Meta:
         model = Newsletter
         fields = ('email',)
-
-        

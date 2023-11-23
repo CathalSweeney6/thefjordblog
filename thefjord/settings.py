@@ -19,9 +19,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['thefjord-b1491443270e.herokuapp.com', '8000-cathalsween-thefjordblo-u7zx4qj8fxt.ws-eu106.gitpod.io', 'localhost']
+ALLOWED_HOSTS = [
+    'thefjord-b1491443270e.herokuapp.com',
+    '8000-cathalsween-thefjordblo-u7zx4qj8fxt.ws-eu106.gitpod.io',
+    'localhost'
+]
 
-CSRF_TRUSTED_ORIGINS = ["https://8000-cathalsween-thefjordblo-u7zx4qj8fxt.ws-eu106.gitpod.io"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-cathalsween-thefjordblo-u7zx4qj8fxt.ws-eu106.gitpod.io"
+]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -113,16 +119,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -148,7 +154,7 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -156,11 +162,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Email Settings
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'https://formdump.codeinstitute.net/'
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False

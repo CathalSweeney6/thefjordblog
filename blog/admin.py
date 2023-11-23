@@ -19,7 +19,7 @@ class CommentAdmin(admin.ModelAdmin):
     list_filter = ('approved', 'created_on')
     search_fields = ('name', 'email', 'body')
     actions = ['approve_comments']
-    
+
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
 
@@ -27,6 +27,7 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'email')
+
 
 @admin.register(Newsletter)
 class NewsletterAdmin(admin.ModelAdmin):

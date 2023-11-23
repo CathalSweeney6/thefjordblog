@@ -31,7 +31,8 @@ class ArticleDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Article.objects.filter(status=1)
         article = get_object_or_404(queryset, slug=slug)
-        comments = article.comments.filter(approved=True).order_by("-created_on")
+        comments = article.comments.filter(
+            approved=True).order_by("-created_on")
         liked = False
         if article.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -54,7 +55,8 @@ class ArticleDetail(View):
 
         queryset = Article.objects.filter(status=1)
         article = get_object_or_404(queryset, slug=slug)
-        comments = article.comments.filter(approved=True).order_by("-created_on")
+        comments = article.comments.filter(
+            approved=True).order_by("-created_on")
         liked = False
         if article.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -68,7 +70,6 @@ class ArticleDetail(View):
             comment.save()
         else:
             comment_form = CommentForm()
-
 
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
@@ -133,21 +134,21 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success')            
+            return redirect('success')
     context = {
         'form': form
     }
     return render(request, 'contact.html', context)
 
-# View for the newsletter subscription form
 
+# View for the newsletter subscription form
 def newsletter(request):
     form = NewsletterForm()
     if request.method == 'POST':
         form = NewsletterForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success_newsletter')            
+            return redirect('success_newsletter')
     context = {
         'form': form
     }
@@ -178,8 +179,8 @@ def success_newsletter(request):
         print("else block")
         return render(request, 'success_newsletter.html', {})
 
-# View for deleting a comment as Site User
 
+# View for deleting a comment as Site User
 @login_required
 def delete_user_comment(request, comment_id):
     """ Delete comment
