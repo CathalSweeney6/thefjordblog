@@ -38,6 +38,8 @@ Alongside the logging of my User Stories, I ran manual tests for each of them, a
 
 ![screenshot](documentation/screenshots/manualtests.png)
 
+![screenshot](documentation/screenshots/manualtests_extra.png)
+
 ### Agile Methodology
 
 I completed my tasks by using the Agile method of task management. I found this method very helpful and rewarding to my work. I added User Story issues to my Github Projects tab on the site's repository page, which can be viewed [here](https://github.com/users/CathalSweeney6/projects/5/views/1).
@@ -150,6 +152,7 @@ Once the user is logged in, the sign in/sign up prompt isn't displayed. They can
 
 
 ![screenshot](documentation/screenshots/like_comment.png)
+
 
 #### Edit Comments Page 
 
@@ -287,6 +290,16 @@ Testing was carried out extensively, whilst creating and publishing my site. As 
 
 ![screenshot](documentation/screenshots/manualtests.png)
 
+![screenshot](documentation/screenshots/manualtests_extra.png)
+
+#### Browser Testing 
+
+I created my website using Google Chrome. The site runs perfectly on the server. I also tested that each aspect of the site ran smoothly on Safari and Firefox. The site ran on both servers, with no errors or bugs. 
+
+![screenshot](documentation/screenshots/safari.png)
+
+![screenshot](documentation/screenshots/firefox.png)
+
 
 #### Lighthouse 
 
@@ -302,6 +315,7 @@ I ran all of my html through W3's html validation site, and received no errors.
 
 ![screenshot](documentation/screenshots/html1.png)
 
+
 ![screenshot](documentation/screenshots/html2.png)
 
 
@@ -312,6 +326,18 @@ I ran all of my html through W3's html validation site, and received no errors.
 
 
 ![screenshot](documentation/screenshots/html5.png)
+
+
+![screenshot](documentation/screenshots/html6.png)
+
+
+![screenshot](documentation/screenshots/html7.png)
+
+
+![screenshot](documentation/screenshots/html8.png)
+
+
+![screenshot](documentation/screenshots/html9.png)
 
 #### W3 CSS Validation 
 
@@ -340,6 +366,20 @@ I validated the Python files of my project using Code Institute's Python Linter.
 ![screenshot](documentation/screenshots/python7.png)
 
 ![screenshot](documentation/screenshots/python8.png)
+
+![screenshot](documentation/screenshots/python9.png)
+
+![screenshot](documentation/screenshots/python10.png)
+
+![screenshot](documentation/screenshots/python11.png)
+
+![screenshot](documentation/screenshots/python12.png)
+
+![screenshot](documentation/screenshots/python13.png)
+
+![screenshot](documentation/screenshots/python14.png)
+
+
 
 #### JavaScript Validation 
 
